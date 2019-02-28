@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= article.title
+	h5 Written by #{article.author}
+	p= article.body
+	hr
+	br
+	a.btn.btn-success(href='/articles/edit/'+article._id) Edit
+	a.btn.btn-danger.delete-article(href='javascript:void(0);', data-id=article._id) Delete
