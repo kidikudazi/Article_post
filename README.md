@@ -1,4 +1,4 @@
-# Articles post using Node.js And Express
+# Articles post using Node.js, Express And MongoDB
 This is a article post forum app using Node.js, Express, Mongoose, pug templating engine and some other packages.
 
 # Usage
@@ -15,4 +15,4 @@ $ nodemon
 # Visit http://localhost:3000
 ```
 # MongoDB
-Open "config/keys.js" and add your MongoDB URI, local or Atlas
+Create a database with an article table which follows the structure in the "models/article.js" file.
