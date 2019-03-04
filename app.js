@@ -12,7 +12,7 @@ const config = require('./config/database');
 
 // connect to database
 mongoose.connect(process.env.MONGODB_URI || process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || config.database, {useNewUrlParser:true});
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 
 // check connection
