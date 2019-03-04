@@ -11,7 +11,7 @@ const config = require('./config/database');
 
 
 // connect to database
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || config.database, {useNewUrlParser:true});
+mongoose.connect(process.env.MONGOLAB_URI || config.database, {useNewUrlParser:true});
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 
@@ -35,6 +35,16 @@ let Article = require('./models/article');
 app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'pug');
+
+if (app.get('env') === 'production') {
+    app.use(function (err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+}
 
 // body parser Middleware parse application
 app.use(bodyParser.urlencoded({extended: false }));
