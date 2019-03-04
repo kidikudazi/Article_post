@@ -115,8 +115,8 @@ app.use('/users', users);
 
 // set port
 const port = process.env.PORT || 5000;
-// start server
 
+// start server
 app.listen(port, function(){
-	console.log(`Server started on port ${port}...`)
+	console.log(`Server started on port ${port}...`);
 });
