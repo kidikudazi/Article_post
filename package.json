@@ -1,13 +1,13 @@
 {
   "name": "nodekb",
   "version": "1.0.0",
-  "description": "node knowledge base\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[simple knowledge base",
+  "description": "node knowledge base",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "author": "francis adeboye\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~\u001b[\u001b[3\u001b[3~\u001b[3~\u001b[3~\u001b[F\u001b[B\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[ Francis Adeboye",
+  "author": "francis adeboye",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
