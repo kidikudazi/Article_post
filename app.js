@@ -11,7 +11,8 @@ const config = require('./config/database');
 
 
 // connect to database
-mongoose.connect(config.database);
+mongoose.connect(config.database, {useNewUrlParser:true});
+mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 
 // check connection
@@ -112,7 +113,10 @@ app.use('/articles', articles);
 
 app.use('/users', users);
 
+// set port
+const port = process.env.PORT || 5000;
 // start server
-app.listen('3000', function(){
-	console.log('Server started on port 3000...')
+
+app.listen(port, function(){
+	console.log(`Server started on port ${port}...`)
 });

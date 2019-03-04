@@ -1,4 +1,4 @@
 module.exports = {
-	database: 'mongodb://localhost:27017/nodekb',
+	database: 'mongodb+srv://kidikudazi:OcUa1zDmuWNEz9Aa@nodekb-etupp.mongodb.net/test?retryWrites=true',
 	secret: 'Any secret'
 }

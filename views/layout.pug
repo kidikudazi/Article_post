@@ -16,12 +16,13 @@ html
 						a.nav-link(href='/')
 							| Home 
 							span.sr-only (current)
-					li.nav-item
-						a.nav-link(href='articles/add') Add Articles
+					if user
+						li.nav-item
+							a.nav-link(href='articles/add') Add Articles
 				ul.nav.navbar-nav.navbar-right
 					if user
 						li 
-							a.nav-link(href='users/logout') Logout
+							a.nav-link(href='/users/logout') Logout
 					else
 						li
 							a.nav-link(href='/users/register') Register
