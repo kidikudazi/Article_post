@@ -11,7 +11,7 @@ const config = require('./config/database');
 
 
 // connect to database
-mongoose.connect(config.database, {useNewUrlParser:true});
+mongoose.connect(process.env.MONGOLAB_URI || config.database, {useNewUrlParser:true});
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 
