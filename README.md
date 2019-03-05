@@ -12,7 +12,9 @@ $ npm start
 $ nodemon
 ```
 ```
-# Visit http://localhost:3000
+# start your mongodb or connect to your mlab account
+# Visit http://localhost:5000
 ```
 # MongoDB
-Create a database with an article table which follows the structure in the "models/article.js" file.
+Create a database with a user table which follows the structure in the "models/user.js" file.
+Create a database with a article table which follows the structure in the "models/article.js" file.

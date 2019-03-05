@@ -36,7 +36,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'pug');
 
-
 // body parser Middleware parse application
 app.use(bodyParser.urlencoded({extended: false }));
 

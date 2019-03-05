@@ -1,4 +1,4 @@
 module.exports = {
-	database: 'mongodb+srv://kidikudazi:ZwU1zehHFwemk32k@nodekb-etupp.mongodb.net/test?retryWrites=true',
+	database: 'Your mlab connection string or localhost connection string for mongodb if app is to be used locally',
 	secret: 'Any secret'
 }
